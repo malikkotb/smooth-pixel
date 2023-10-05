@@ -557,11 +557,11 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
-.mr-0 {
-  margin-right: 0px;
+.sticky {
+  position: sticky;
 }
-.ml-auto {
-  margin-left: auto;
+.z-10 {
+  z-index: 10;
 }
 .flex {
   display: flex;
@@ -572,11 +572,14 @@ video {
 .h-screen {
   height: 100vh;
 }
+.h-full {
+  height: 100%;
+}
+.min-h-screen {
+  min-height: 100vh;
+}
 .w-12 {
   width: 3rem;
-}
-.w-screen {
-  width: 100vw;
 }
 .items-center {
   align-items: center;
@@ -587,8 +590,14 @@ video {
 .justify-between {
   justify-content: space-between;
 }
+.overflow-y-hidden {
+  overflow-y: hidden;
+}
 .text-center {
   text-align: center;
+}
+.align-middle {
+  vertical-align: middle;
 }
 .text-4xl {
   font-size: 2.25rem;

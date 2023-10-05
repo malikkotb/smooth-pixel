@@ -1,14 +1,18 @@
+"use client";
 import Menu from "@/components/menu/menu";
 import Header from "@/components/header/header";
+import { useState } from "react";
 export default function Home() {
+  const [menuActive, setMenuActive] = useState(false);
+
   return (
     <div className="">
       <div className="flex justify-between">
         <div></div>
-        <Menu />
+        <Header menuActive={menuActive} setMenuActive={setMenuActive} />
       </div>
-      <div className="flex justify-center items-center h-screen">
-        <Header />
+      <div className=" justify-center align-middle">
+        <Menu menuActive={menuActive} />
       </div>
     </div>
   );

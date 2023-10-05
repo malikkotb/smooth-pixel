@@ -1,6 +1,15 @@
-import { FiMenu } from "react-icons/fi"
-export default function menu() {
+export default function menu({ menuActive }) {
   return (
-    <div><FiMenu className="h-12 w-12" /></div>
-  )
+    <>
+      {menuActive && (
+        <div className="justify-center text-center">
+          <ul>
+            <li className="text-4xl">Home</li>
+            <li className="text-4xl">About</li>
+            <li className="text-4xl">Contact</li>
+          </ul>
+        </div>
+      )}
+    </>
+  );
 }
