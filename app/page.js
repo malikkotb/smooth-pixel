@@ -2,6 +2,7 @@
 import Menu from "@/components/menu/menu";
 import Header from "@/components/header/header";
 import { useState } from "react";
+import PixelBackground from "@/components/pixelBackground";
 export default function Home() {
   const [menuActive, setMenuActive] = useState(false);
 
@@ -14,6 +15,7 @@ export default function Home() {
       <div className="justify-center flex flex-1 items-center">
         <Menu menuActive={menuActive} />
       </div>
+      <PixelBackground />
       <div></div>
     </div>
   );
