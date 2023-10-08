@@ -7,7 +7,7 @@ export default function Home() {
   const [menuActive, setMenuActive] = useState(false);
 
   return (
-    <div className="p-2 flex flex-col h-screen">
+    <div className="flex flex-col h-screen">
       <div className="flex justify-between">
         <div></div>
         <Header menuActive={menuActive} setMenuActive={setMenuActive} />
