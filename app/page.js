@@ -2,21 +2,18 @@
 import Menu from "@/components/menu/menu";
 import Header from "@/components/header/header";
 import { useState } from "react";
-import PixelBackground from "@/components/pixelBackground";
+import PixelBackground from "@/components/pixelBackground/pixelBackground";
 export default function Home() {
   const [menuActive, setMenuActive] = useState(false);
 
   return (
-    <div className="flex flex-col h-screen">
-      <div className="flex justify-between">
-        <div></div>
-        <Header menuActive={menuActive} setMenuActive={setMenuActive} />
-      </div>
-      <div className="justify-center flex flex-1 items-center">
-        <Menu menuActive={menuActive} />
-      </div>
+    <main className="flex flex-col justify-between items-center p-24 min-h-screen">
+      <Header menuActive={menuActive} setMenuActive={setMenuActive} />
+      <Menu
+        className="justify-center flex flex-1 items-center"
+        menuActive={menuActive}
+      />
       <PixelBackground />
-      <div></div>
-    </div>
+    </main>
   );
 }
