@@ -1,6 +1,6 @@
 export default function menu({ menuActive }) {
   return (
-    <div className="fixed flex flex-col items-center justify-center h-92 w-full z-20">
+    <div className="fixed flex flex-col items-center justify-center h-92 w-full z-10">
       {menuActive && (
         <>
           <p className="text-5xl">Home</p>
